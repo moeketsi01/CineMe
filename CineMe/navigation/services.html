@@ -2,181 +2,400 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CineMe Productions | Services</title>
+    <title>CineMe Productions - Services</title>
 
+    <!-- Prepare the page for the logo introduction. -->
+    <script>
+        document.documentElement.classList.add('js', 'cineme-splash-pending');
+
+        window.setTimeout(function () {
+            document.documentElement.classList.remove('cineme-splash-pending');
+        }, 4000);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
 
-   
+    <!-- Website Header -->
     <header>
-
         <h1>CineMe Productions</h1>
-
-        <p>Professional Film and Media Services</p>
-
+        <p>Our Services</p>
     </header>
 
 
-
+    <!-- Main Navigation -->
     <nav>
-
         <a href="../index.html">Home</a>
-
         <a href="about.html">About</a>
-
         <a href="services.html">Services</a>
-
-        
-
+        <a href="portfolio.html">Portfolio</a>
         <a href="contact.html">Contact</a>
-
     </nav>
-
 
 
     <main>
 
-        <section>
+        <!-- Services Introduction -->
+        <section class="hero">
+
+            <span class="hero-label">WHAT WE DO</span>
 
             <h2>Our Services</h2>
 
             <p>
-                CineMe Productions offers a range of creative
-                services for individuals, artists and businesses.
+                CineMe Productions provides professional film,
+                photography and media production services for
+                individuals, artists and businesses.
             </p>
 
         </section>
 
 
+        <!-- Film Production -->
+        <section class="service-panel">
 
-        <section>
+            <div class="service-copy">
 
-            <h3>Film Production</h3>
+                <span class="section-label">01 / PRODUCTION</span>
 
-            <img
-                src="../images/stage/778d1f30ebb5c61d1993a1ca4089fb88.jpg"
-                alt="Film production"
-                width="400"
-            >
+                <h2>Film Production</h2>
 
-            <p>
-                We produce short films, documentaries and other
-                creative film projects.
-            </p>
+                <p>
+                    We produce short films, documentaries and other
+                    creative film projects. Our team helps turn ideas
+                    into visual stories through planning, filming
+                    and production work.
+                </p>
 
-        </section>
+            </div>
 
+            <div class="service-image">
 
-        <section>
+                <img src="../images/82bd6c1e16ef3d573a0422906b688581.jpg"
+                     alt="Camera crew working on a film production">
 
-            <h3>Photography</h3>
-
-            <img
-                src="../images/photfolio/9638d29d0c9101be111b4a058ce98d48.jpg"
-                alt="Photography service"
-                width="400"
-            >
-
-            <p>
-                We provide photography services for events,
-                portraits, artists and creative projects.
-            </p>
+            </div>
 
         </section>
 
 
-   
-        <section>
+        <!-- Photography -->
+        <section class="service-panel service-panel-reverse">
 
-            <h3>Videography</h3>
+            <div class="service-copy">
 
-            <img
-                src="../images/photfolio/b4d6329b350492d0dacc60a7a83340e1.jpg"
-                alt="Videography service"
-                width="400"
-            >
+                <span class="section-label">02 / STILL IMAGES</span>
 
-            <p>
-                We record professional video content for events,
-                businesses, artists and special occasions.
-            </p>
+                <h2>Photography</h2>
 
-        </section>
+                <p>
+                    We provide photography services for events,
+                    portraits, artists, businesses and creative projects.
+                    Our aim is to capture important moments and present
+                    them through clear and thoughtful images.
+                </p>
 
+            </div>
 
-        <section>
+            <div class="service-image">
 
-            <h3>Drone Production</h3>
+                <img src="../images/5ec14f0a2b9cc0e7a9d9d0541584c20f.jpg"
+                     alt="Photography from a creative production">
 
-            <img
-                src="../images/drone/648bd99d1376806d25575695b38b4495.jpg"
-                alt="Drone production"
-                width="400"
-            >
-
-            <p>
-                Our drone production service provides aerial
-                footage for films, events and promotional content.
-            </p>
+            </div>
 
         </section>
 
 
-   
-        <section>
+        <!-- Videography -->
+        <section class="service-panel">
 
-            <h3>Video Editing</h3>
+            <div class="service-copy">
 
-            <img
-                src="../images/diting/46bcdf160406ca9a06ec22cc12a8cd14.jpg"
-                alt="Video editing"
-                width="400"
-            >
+                <span class="section-label">03 / MOVING IMAGES</span>
 
-            <p>
-                We edit video footage and prepare content for
-                online platforms and other forms of presentation.
-            </p>
+                <h2>Videography</h2>
 
-        </section>
+                <p>
+                    We create video content for artists, businesses,
+                    events and special occasions. Our work helps clients
+                    communicate their ideas through moving images.
+                </p>
 
+            </div>
 
-    
-        <section>
+            <div class="service-image">
 
-            <h3>Sound Production</h3>
+                <img src="../images/582d0c04e0c77218a731e277f3838237.jpg"
+                     alt="Video camera and monitor during production">
 
-            <img
-                src="../images/sound/8b8c79a975c171270f86297dab09f8a3.jpg"
-                alt="Sound production"
-                width="400"
-            >
-
-            <p>
-                We provide sound recording and audio support
-                for different types of productions.
-            </p>
+            </div>
 
         </section>
 
 
-      
-        <section>
+        <!-- Drone Production -->
+        <section class="service-panel service-panel-reverse">
 
-            <h2>Interested in Our Services?</h2>
+            <div class="service-copy">
+
+                <span class="section-label">04 / AERIAL WORK</span>
+
+                <h2>Drone Production</h2>
+
+                <p>
+                    We provide aerial footage for films, events and
+                    promotional content. Drone footage gives productions
+                    a different view and helps capture locations from
+                    new perspectives.
+                </p>
+
+            </div>
+
+            <div class="service-image">
+
+                <img src="../images/drone/648bd99d1376806d25575695b38b4495.jpg"
+                     alt="Drone used for aerial filming">
+
+            </div>
+
+        </section>
+
+
+        <!-- Video Editing -->
+        <section class="service-panel">
+
+            <div class="service-copy">
+
+                <span class="section-label">05 / POST-PRODUCTION</span>
+
+                <h2>Video Editing</h2>
+
+                <p>
+                    We edit video footage and prepare content for
+                    different platforms. We arrange footage, sound
+                    and other elements to create a finished video.
+                </p>
+
+            </div>
+
+            <div class="service-image">
+
+                <img src="../images/diting/46bcdf160406ca9a06ec22cc12a8cd14.jpg"
+                     alt="Video editing software on a computer screen">
+
+            </div>
+
+        </section>
+
+
+        <!-- Sound Production -->
+        <section class="service-panel service-panel-reverse">
+
+            <div class="service-copy">
+
+                <span class="section-label">06 / AUDIO</span>
+
+                <h2>Sound Production</h2>
+
+                <p>
+                    We provide sound recording and audio support for
+                    different film and media productions. Sound helps
+                    make visual projects more complete and engaging.
+                </p>
+
+            </div>
+
+            <div class="service-image">
+
+                <img src="../images/sound/8b8c79a975c171270f86297dab09f8a3.jpg"
+                     alt="Sound equipment used for media production">
+
+            </div>
+
+        </section>
+
+
+        <!-- Frequently Asked Questions -->
+        <section class="faq-section">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="accordion">
+
+
+                <div class="accordion-item">
+
+                    <h3>
+                        <button type="button"
+                                class="accordion-trigger"
+                                id="faq-btn-1"
+                                aria-expanded="false"
+                                aria-controls="faq-1">
+
+                            Where is CineMe Productions based?
+
+                        </button>
+                    </h3>
+
+                    <div class="accordion-panel"
+                         id="faq-1"
+                         role="region"
+                         aria-labelledby="faq-btn-1">
+
+                        <p>
+                            We are a creative film and media production
+                            company based in Johannesburg, South Africa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3>
+                        <button type="button"
+                                class="accordion-trigger"
+                                id="faq-btn-2"
+                                aria-expanded="false"
+                                aria-controls="faq-2">
+
+                            What services do you offer?
+
+                        </button>
+                    </h3>
+
+                    <div class="accordion-panel"
+                         id="faq-2"
+                         role="region"
+                         aria-labelledby="faq-btn-2">
+
+                        <p>
+                            We offer film production, photography,
+                            videography, drone production, video editing
+                            and sound production.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3>
+                        <button type="button"
+                                class="accordion-trigger"
+                                id="faq-btn-3"
+                                aria-expanded="false"
+                                aria-controls="faq-3">
+
+                            Who do you work with?
+
+                        </button>
+                    </h3>
+
+                    <div class="accordion-panel"
+                         id="faq-3"
+                         role="region"
+                         aria-labelledby="faq-btn-3">
+
+                        <p>
+                            We create visual content that helps individuals,
+                            artists and businesses tell their stories.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3>
+                        <button type="button"
+                                class="accordion-trigger"
+                                id="faq-btn-4"
+                                aria-expanded="false"
+                                aria-controls="faq-4">
+
+                            Who is on the production team?
+
+                        </button>
+                    </h3>
+
+                    <div class="accordion-panel"
+                         id="faq-4"
+                         role="region"
+                         aria-labelledby="faq-btn-4">
+
+                        <p>
+                            Our team covers camera operation, lighting,
+                            sound, editing, photography and production planning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="accordion-item">
+
+                    <h3>
+                        <button type="button"
+                                class="accordion-trigger"
+                                id="faq-btn-5"
+                                aria-expanded="false"
+                                aria-controls="faq-5">
+
+                            How do I start a project with you?
+
+                        </button>
+                    </h3>
+
+                    <div class="accordion-panel"
+                         id="faq-5"
+                         role="region"
+                         aria-labelledby="faq-btn-5">
+
+                        <p>
+                            Send us a message on the Contact page and
+                            tell us about your project.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Call To Action -->
+        <section class="contact-bottom">
+
+            <h2>Need Our Services?</h2>
 
             <p>
-                Contact us to discuss your next production.
+                Contact CineMe Productions to discuss your next film,
+                photography or video project.
             </p>
 
-            <a href="contact.html">
-                Contact CineMe Productions
+            <a class="button" href="contact.html">
+                Contact Us
             </a>
 
         </section>
@@ -184,13 +403,16 @@
     </main>
 
 
+    <!-- Website Footer -->
     <footer>
-
-        <p>
-            &copy; 2026 CineMe Productions. All Rights Reserved.
-        </p>
-
+        <p>&copy; 2026 CineMe Productions. All Rights Reserved.</p>
     </footer>
+
+
+    <!-- jQuery must load before the website JavaScript. -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="../java/script.js" defer></script>
+    <script src="../java/splash.js" defer></script>
 
 </body>
 

@@ -4,114 +4,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | CineMe Productions</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <title>CineMe Productions - Contact</title>
+
+    <!-- Prepare the page for the logo introduction. -->
+    <script>
+        document.documentElement.classList.add('js');
+        document.documentElement.classList.add('cineme-splash-pending');
+
+        window.setTimeout(function () {
+            document.documentElement.classList.remove('cineme-splash-pending');
+        }, 2500);
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
+
 </head>
 
 <body>
 
+    <!-- Website Header -->
     <header>
+
         <h1>CineMe Productions</h1>
-        <p>Get in Touch With Us</p>
+        <p>Contact Us</p>
+
     </header>
 
-   
+
+    <!-- Navigation Menu -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+
     </nav>
 
-  
+
     <main>
 
-        <section>
-            <h2>Contact Information</h2>
+        <!-- Contact Introduction -->
+        <section class="contact-intro">
 
-            <p><strong>Address:</strong> 23 joubert street, Johannesburg, South Africa</p>
+            <h2>Let's Bring Your Story to Life</h2>
 
-            <p><strong>Phone:</strong> 075 143 4289</p>
-
-            <p><strong>Email:</strong> info@cinemeproductions.co.za</p>
-
-            <p><strong>Business Hours:</strong></p>
-
-            <ul>
-                <li>Monday – Friday: 08:00 – 17:00</li>
-                <li>Saturday: 09:00 – 14:00</li>
-                <li>Sunday: Closed</li>
-            </ul>
-        </section>
-
-        <section>
-
-            <h2>Send Us a Message</h2>
-
-            <form action="#" method="post">
-
-                <label for="fullname">Full Name:</label><br>
-                <input type="text" id="fullname" name="fullname" required><br><br>
-
-                <label for="email">Email Address:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-
-                <label for="phone">Phone Number:</label><br>
-                <input type="tel" id="phone" name="phone"><br><br>
-
-                <label for="service">Service Required:</label><br>
-
-                <select id="service" name="service">
-
-                    <option value="">-- Select a Service --</option>
-
-                    <option>Film Production</option>
-
-                    <option>Videography</option>
-
-                    <option>Photography</option>
-
-                    <option>Video Editing</option>
-
-                    <option>Drone Videography</option>
-
-                    <option>Music Video Production</option>
-
-                </select><br><br>
-
-                <label for="message">Message:</label><br>
-
-                <textarea id="message" name="message" rows="6" cols="50" required></textarea><br><br>
-
-                <input type="submit" value="Send Message">
-
-                <input type="reset" value="Clear Form">
-
-            </form>
+            <p>
+                Have a film, photography or media project?
+                Get in touch with CineMe Productions and
+                tell us about your idea.
+            </p>
 
         </section>
 
-        <section>
 
-            <h2>Follow Us</h2>
+        <!-- Contact Information and Form -->
+        <section class="contact-section">
 
-            <ul>
-                <li>Facebook: CineMe Productions</li>
-                <li>Instagram: @CineMeProductions</li>
-                <li>YouTube: CineMe Productions</li>
-                <li>TikTok: @CineMeProductions</li>
-            </ul>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+
+                <h2>Get In Touch</h2>
+
+                <img src="../images/photfolio/c669d93a606ae7423c9aa621fabab8a0.jpg"
+                     alt="CineMe Productions">
+
+                <p>
+                    We would love to hear about your next
+                    creative project. You can contact us using
+                    the information below.
+                </p>
+
+
+                <h3>Location</h3>
+
+                <p>
+                    Johannesburg, South Africa
+                </p>
+
+
+                <h3>Email</h3>
+
+                <p>
+                    info@cinemeproductions.co.za
+                </p>
+
+
+                <h3>Phone</h3>
+
+                <p>
+                    +27 12 345 6789
+                </p>
+
+
+                <h3>Business Hours</h3>
+
+                <p>
+                    Monday - Friday: 08:00 - 17:00
+                </p>
+
+                <p>
+                    Saturday: 09:00 - 13:00
+                </p>
+
+                <p>
+                    Sunday: Closed
+                </p>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+
+                <h2>Send Us An Enquiry</h2>
+
+                <form action="#" method="post">
+
+
+                    <!-- Full Name -->
+                    <label for="name">Full Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        required>
+
+
+                    <!-- Email -->
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+
+                    <!-- Phone -->
+                    <label for="phone">Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required>
+
+
+                    <!-- Service -->
+                    <label for="service">Service Required</label>
+
+                    <select id="service" name="service">
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="film-production">
+                            Film Production
+                        </option>
+
+                        <option value="photography">
+                            Photography
+                        </option>
+
+                        <option value="videography">
+                            Videography
+                        </option>
+
+                        <option value="drone-production">
+                            Drone Production
+                        </option>
+
+                        <option value="video-editing">
+                            Video Editing
+                        </option>
+
+                        <option value="sound-production">
+                            Sound Production
+                        </option>
+
+                    </select>
+
+
+                    <!-- Enquiry -->
+                    <label for="message">Your Enquiry</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Tell us about your project or enquiry..."
+                        required></textarea>
+
+
+                    <!-- Submit Button -->
+                    <input
+                        type="submit"
+                        value="Send Enquiry">
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Google Maps Location -->
+        <section class="map-section">
+
+            <h2>Find Us</h2>
+
+            <p>
+                CineMe Productions is based in Johannesburg,
+                South Africa.
+            </p>
+
+            <div class="map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Johannesburg,+South+Africa&output=embed"
+                    title="Google Maps showing Johannesburg, South Africa"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+            <p class="map-note">
+                View our location in Johannesburg using Google Maps.
+            </p>
+
+        </section>
+
+
+        <!-- Final Contact Section -->
+        <section class="contact-bottom">
+
+            <h2>Let's Create Something Together</h2>
+
+            <p>
+                Whether you are planning a film, music video,
+                event or photography project, CineMe Productions
+                is ready to hear your idea.
+            </p>
 
         </section>
 
     </main>
 
+
+    <!-- Website Footer -->
     <footer>
-        <p>&copy; 2026 CineMe Productions. All Rights Reserved.</p>
+
+        <p>
+            &copy; 2026 CineMe Productions. All Rights Reserved.
+        </p>
+
     </footer>
+
+
+    <!-- Website JavaScript Files -->
+    <script src="../java/script.js" defer></script>
+    <script src="../java/splash.js" defer></script>
 
 </body>
 

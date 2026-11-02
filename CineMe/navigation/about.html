@@ -2,77 +2,255 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About | CineMe Productions</title>
+    <title>CineMe Productions - About</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Prepare the page for the logo introduction. -->
+    <script>
+        document.documentElement.classList.add('js', 'cineme-splash-pending');
 
+        window.setTimeout(function () {
+            document.documentElement.classList.remove('cineme-splash-pending');
+        }, 4000);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
 
-<header>
-
-<h1>About CineMe Productions</h1>
-
-</header>
-
-<nav>
-
-<a href="index.html">Home</a> 
-
-<a href="about.html">About</a> 
-
-<a href="services.html">Services</a> 
+    <!-- Website Header -->
+    <header>
+        <h1>CineMe Productions</h1>
+        <p>About Us</p>
+    </header>
 
 
+    <!-- Main Navigation -->
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
 
-<a href="contact.html">Contact</a>
+    <main>
 
-</nav>
+        <!-- About Introduction -->
+        <section class="hero">
+            <span class="hero-label">GET TO KNOW US</span>
 
-<main>
+            <h2>About CineMe Productions</h2>
 
-<h2>Who We Are</h2>
+            <p>
+                We are a creative film and media production company
+                focused on bringing stories to life through visual media.
+            </p>
+        </section>
 
-<p>
 
-CineMe Productions is a professional media company
-specializing in film production, photography,
-and visual storytelling.
+        <!-- Who We Are -->
+        <section class="about-feature">
 
-</p>
+            <div class="about-copy">
+                <span class="section-label">OUR COMPANY</span>
 
-<h2>Mission</h2>
+                <h2>Who We Are</h2>
 
-<p>
+                <p>
+                    CineMe Productions is a Johannesburg-based creative
+                    production company in South Africa. We work on different
+                    types of visual projects including films, photography
+                    and video content.
+                </p>
 
-To create cinematic content that inspires,
-engages and tells unforgettable stories.
+                <p>
+                    Our team works together to plan, produce and edit
+                    content that communicates a clear story.
+                </p>
+            </div>
 
-</p>
+            <div class="about-image about-image-tall">
+                <img src="../images/download%20(6).jpg"
+                     alt="Professional video camera used for production">
+            </div>
 
-<h2>Vision</h2>
+        </section>
 
-<p>
 
-To become one of South Africa's leading
-film production companies.
+        <!-- Mission -->
+        <section class="about-feature about-feature-reverse">
 
-</p>
+            <div class="about-copy">
+                <span class="section-label">OUR PURPOSE</span>
 
-</main>
+                <h2>Our Mission</h2>
 
-<footer>
+                <p>
+                    Our mission is to create quality visual content that
+                    connects with audiences and helps our clients
+                    communicate their ideas.
+                </p>
 
-<p>&copy; 2026 CineMe Productions</p>
+                <p>
+                    We aim to make every production creative,
+                    meaningful and professional.
+                </p>
+            </div>
 
-</footer>
+            <div class="about-image">
+                <img src="../images/filmage%20Eglise.jpg"
+                     alt="Production crew operating a camera">
+            </div>
+
+        </section>
+
+
+        <!-- Values -->
+        <section class="values-section">
+
+            <span class="section-label">WHAT MATTERS TO US</span>
+
+            <h2>What We Believe</h2>
+
+            <p>
+                We believe that every story deserves to be seen.
+                Film and photography can capture important moments
+                and communicate ideas in a powerful way.
+            </p>
+
+            <div class="value-grid">
+
+                <div class="value-card">
+                    <span class="value-number">01</span>
+
+                    <h3>Creativity</h3>
+
+                    <p>
+                        We value new ideas and creative ways
+                        of telling stories.
+                    </p>
+                </div>
+
+
+                <div class="value-card">
+                    <span class="value-number">02</span>
+
+                    <h3>Teamwork</h3>
+
+                    <p>
+                        We believe that good productions are
+                        built through people working together.
+                    </p>
+                </div>
+
+
+                <div class="value-card">
+                    <span class="value-number">03</span>
+
+                    <h3>Communication</h3>
+
+                    <p>
+                        We value clear communication with
+                        clients and production teams.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Production Team -->
+        <section class="about-feature">
+
+            <div class="about-copy">
+                <span class="section-label">BEHIND THE CAMERA</span>
+
+                <h2>Our Production Team</h2>
+
+                <p>
+                    Our production team includes creative people who
+                    work together in different areas of production.
+                </p>
+
+                <p>
+                    These areas include camera operation, lighting,
+                    sound, editing, photography and production planning.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="../images/corporate%20man.jpg"
+                     alt="Creative professionals working together">
+            </div>
+
+        </section>
+
+
+        <!-- What We Offer -->
+        <section class="about-feature about-feature-reverse">
+
+            <div class="about-copy">
+                <span class="section-label">WHAT WE DO</span>
+
+                <h2>Our Creative Services</h2>
+
+                <p>
+                    CineMe Productions offers film production,
+                    photography, videography, drone production,
+                    video editing and sound production.
+                </p>
+
+                <a class="button" href="services.html">
+                    View Our Services
+                </a>
+            </div>
+
+            <div class="about-image">
+                <img src="../images/ea6ad4d4ceeea00eac420b2ad66d72e0.jpg"
+                     alt="Camera equipment for film and media work">
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact-bottom">
+
+            <h2>Work With Us</h2>
+
+            <p>
+                Have an idea for a project? Get in touch with
+                CineMe Productions and let's create something together.
+            </p>
+
+            <a class="button" href="contact.html">
+                Contact Us
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website Footer -->
+    <footer>
+        <p>&copy; 2026 CineMe Productions. All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- Website JavaScript -->
+    <script src="../java/script.js" defer></script>
+    <script src="../java/splash.js" defer></script>
 
 </body>
 
